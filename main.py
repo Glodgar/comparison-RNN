@@ -4,38 +4,43 @@ from sklearn.preprocessing import MinMaxScaler
 from default_config import *
 
 from dataSplit import dataSplit
+from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
 
 os.environ['CUDA_VISIBLE_DEVICES']='-1' 
 
 step = 144 #skip the measurements (6 measurements per hour * 24 hours)
 lookback = 10 #number of days which the prediction is based
+epochs = 500
+batch_size = 100
 
 train_days = 1500
 validation_days = 500
 test_days = 500
 
-T = True #temperatura w stopniach celsjusza "temperature"
-# Tpot = True #temperatura w kelvinach "temperature in klevin"
-p = True #cisnienie "pressure"
-# Tdew = True #"temperature (dew point)"
-# rh = True #"relative humidity"
-# VPmax = True #"saturation vapor pressure"
-# VPact = True #"vaport pressure"
-# VPdef = True #"vaport pressure deficit"
-# sh  = True #"specific humidity"
+verbose = 1
+
+T = True #temperature
+# Tpot = True #temperature in klevin
+p = True #pressure
+# Tdew = True #temperature (dew point)
+# rh = True #relative humidity
+# VPmax = True #saturation vapor pressure
+# VPact = True #vaport pressure
+# VPdef = True #vaport pressure deficit
+# sh  = True #specific humidity
 H2OC = True #water vaport concetraton
-# rho = True # "airtight"
-# wv = True #predkosc wiatru "wind speed"
-max_wv = True #max predkosc wiatru "max wind speed"
-# wd = True #kierunek wiatru "wind direction in degrees"
+# rho = True #airtight
+# wv = True #wind speed
+max_wv = True #max wind speed
+# wd = True #wind direction in degrees
 
 spec_count = sum([dateTime, T, Tpot, p, Tdew, rh, VPmax, VPact, VPdef, sh, H2OC, rho, wv, max_wv, wd])
 
 sc = MinMaxScaler(feature_range = (0, 1))
 
-#load data
+#load data of in directory
 fname = os.path.join('data\\jena_climate_2009_2016.csv')
-#or
+#or if downloaded from the repository
 #fname = os.path.join('https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/data/jena_climate_2009_2016.csv')
 
 data = pd.read_csv(fname)
@@ -68,6 +73,12 @@ x_train, y_train = dataSplit(train_set, lookback)
 x_validation, y_validation = dataSplit(validation_set, lookback)
 x_test, y_test = dataSplit(test_set, lookback)
 
-print(x_train.shape)
-print(x_validation.shape)
-print(x_test.shape)
+# print(x_train.shape)
+# print(x_validation.shape)
+# print(x_test.shape)
+
+simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose)
+
+print("DONE")
+
+
