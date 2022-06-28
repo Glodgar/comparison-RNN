@@ -8,6 +8,7 @@ import numpy as np
 
 from drawPlots import drawPlots
 from saveHistory import saveHistory
+from saveWeights import saveWeights
 
 def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose, dataset, sc):
     model = Sequential()
@@ -27,6 +28,7 @@ def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y
     end_time = round(time.time() - start_time, 2)
 
     saveHistory(model, history, epochs, batch_size)
+    saveWeights(model, epochs, batch_size)
     
     print("time: ", end_time)
 
