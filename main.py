@@ -77,7 +77,7 @@ x_test, y_test = dataSplit(test_set, lookback)
 # print(x_validation.shape)
 # print(x_test.shape)
 
-simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose)
+simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose, dataset, sc)
 
 print("DONE")
 
