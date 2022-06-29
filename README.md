@@ -1,4 +1,4 @@
-Comparison efficency of SimpleRNN, LSTM and GRU
+# Comparison efficency of SimpleRNN, LSTM and GRU
 
 ## Development Environment
 * CPU: Intel(R) Core(TM) i5-7600K CPU @ 380GHz 3.79 GHz
