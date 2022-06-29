@@ -6,11 +6,18 @@ import time
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 
+from config.config import *
+
 from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
 
-def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose, dataset, sc):
+def simpleRNN_32_RMSprop(x_train, y_train,
+                         x_validation, y_validation, 
+                         x_test, y_test, 
+                         spec_count, 
+                         dataset, 
+                         sc):
     model = Sequential()
     model.add(SimpleRNN(32, input_shape=(x_train.shape[1], spec_count)))
     model.add(Dense(1))
@@ -27,8 +34,8 @@ def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y
     
     end_time = round(time.time() - start_time, 2)
 
-    saveHistory(model, history, epochs, batch_size)
-    saveWeights(model, epochs, batch_size)
+    saveHistory(model, history)
+    saveWeights(model)
     
     print("time: ", end_time)
 
@@ -55,4 +62,4 @@ def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y
         y_train_descaled = sc.inverse_transform(y_train)
         y_test_descaled = sc.inverse_transform(y_test)
 
-    drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, epochs, batch_size)
+    drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model)

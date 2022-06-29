@@ -1,39 +1,10 @@
 import os
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-from config.default_config import *
+from config.config import *
 
 from utils.dataSplit import dataSplit
 from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
-
-
-os.environ['CUDA_VISIBLE_DEVICES']='-1' 
-
-step = 144 #skip the measurements (6 measurements per hour * 24 hours)
-lookback = 10 #number of days which the prediction is based
-epochs = 500
-batch_size = 100
-
-train_days = 1500
-validation_days = 500
-test_days = 500
-
-verbose = 1
-
-T = True #temperature
-# Tpot = True #temperature in klevin
-p = True #pressure
-# Tdew = True #temperature (dew point)
-# rh = True #relative humidity
-# VPmax = True #saturation vapor pressure
-# VPact = True #vaport pressure
-# VPdef = True #vaport pressure deficit
-# sh  = True #specific humidity
-H2OC = True #water vaport concetraton
-# rho = True #airtight
-# wv = True #wind speed
-max_wv = True #max wind speed
-# wd = True #wind direction in degrees
 
 spec_count = sum([dateTime, T, Tpot, p, Tdew, rh, VPmax, VPact, VPdef, sh, H2OC, rho, wv, max_wv, wd])
 
@@ -78,7 +49,12 @@ x_test, y_test = dataSplit(test_set, lookback)
 # print(x_validation.shape)
 # print(x_test.shape)
 
-simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose, dataset, sc)
+simpleRNN_32_RMSprop(x_train, y_train,
+                     x_validation, y_validation, 
+                     x_test, y_test, 
+                     spec_count, 
+                     dataset, 
+                     sc)
 
 print("DONE")
 

@@ -1,4 +1,6 @@
-def getModelName(model, epochs, batch_size):
+from config.config import *
+
+def getModelName(model):
     tab_layers = []
     for i in range(len(model.layers)):    
         tab_layers.append(model.layers[i].name.translate({ord(c):None for c in "_0123456789"}))

@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 from utils.savePlots import savePlots
 
-def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, epochs, batch_size):   
+from config.config import *
+
+def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model):   
     loss = history.history['loss']
     val_loss = history.history['val_loss']
     epochs_plot = range(len(loss))
@@ -13,7 +15,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.legend(loc="upper left")
     plt_title = "train & validation loss"
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
     
     
     #All data
@@ -23,7 +25,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.xlabel("Day")
     plt_title = "All data"
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
 
 
     #Predicted data
@@ -35,7 +37,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.xlabel("Day")
     plt_title = "Predicted data"
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
 
     
     #Predicted data for 75 days
@@ -47,7 +49,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.xlabel("Day")
     plt_title = "Predicted data for first 75 days"
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
 
     
     #Training curve
@@ -57,7 +59,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.xlabel("Epoch")
     plt_title = "Training curve"
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
 
     
     #Residual plot
@@ -67,7 +69,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.xlabel("Day")
     plt_title = "Residual plot"
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
 
     
     #Scatter plot
@@ -77,7 +79,7 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, ep
     plt.xlabel("Y predicted")
     plt_title = "Scatter plot" 
     plt.title(plt_title)
-    savePlots(model, epochs, batch_size, plt_title)
+    savePlots(model, plt_title)
 
         
     #plt.subplots_adjust(hspace = 0.5, wspace=0.3)

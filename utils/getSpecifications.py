@@ -1,6 +1,8 @@
-def getSpecifications(T, Tpot, p, Tdew, rh, VPmax, VPact, VPdef,sh, H2OC, rho, wv, max_wv, wd):
+from config.config import *
+
+def getSpecifications():
     if T:
-        name += "_T"
+        name = "T"
     if Tpot:
         name += "_Tpot"
     if p:
