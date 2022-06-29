@@ -1,4 +1,49 @@
 Comparison efficency of SimpleRNN, LSTM and GRU
 
+## Development Environment
+CPU: Intel(R) Core(TM) i5-7600K CPU @ 380GHz 3.79 GHz
+Ram: 16.0 GB 
+Keras: 2.10.0
+Python: 3.9.10
+NumPy: 1.22.1
+SciPy: 1.7.3
+Scikit-learn: 1.0.2
+Pandas: 1.4.0
+Matplotlib: 3.5.1
+TensorFlow: 2.10.0
+
+## Dataset
 ![Ilustration of data](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/data.png)
-![Files tree](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/files_tree.png)
+
+## Folders structure
+<p align="center">
+  ![Files tree](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/files_tree.png)
+</p>
+
+```
+└── results 
+    ├── specifications_1
+    │   ├── model_1
+    │   │   ├── charts
+    │   │   │   ├── AllData.png
+    │   │   │   ├── PredictedData.png
+    │   │   │   ├── PredictedDataForFirst75Days.png
+    │   │   │   ├── ResidualPlot.png
+    │   │   │   ├── ScatterPlot.png
+    │   │   │   ├── Train&ValidationLoss.png
+    │   │   │   └──TrainingCurve.png
+    │   │   ├── history
+    │   │   │   └── history.csv
+    │   │   └── weights
+    │   │       └── weights.HDF5
+    │   │
+    │   ├── model_2
+    │   ├── ...
+    │   └── ...
+    │
+    └── specifications_2
+    │   ├── ...
+    │   └── ...
+    └── ...
+    └── ...
+```
