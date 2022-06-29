@@ -6,9 +6,9 @@ import time
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
 
-from drawPlots import drawPlots
-from saveHistory import saveHistory
-from saveWeights import saveWeights
+from utils.drawPlots import drawPlots
+from utils.saveHistory import saveHistory
+from utils.saveWeights import saveWeights
 
 def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, batch_size, epochs, verbose, dataset, sc):
     model = Sequential()

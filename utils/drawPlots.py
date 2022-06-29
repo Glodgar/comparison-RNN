@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from savePlots import savePlots
+from utils.savePlots import savePlots
 
 def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, epochs, batch_size):   
     loss = history.history['loss']

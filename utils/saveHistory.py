@@ -81,6 +81,7 @@ def saveHistory(model, history, epochs, batch_size):
     if not os.path.exists(path):
         os.mkdir(path)
         print('created dictionary:', path, "\n")
+        
     path += name
     path += ".csv"
     hist_df = pd.DataFrame(history.history)

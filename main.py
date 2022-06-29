@@ -1,10 +1,11 @@
 import os
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
-from default_config import *
+from config.default_config import *
 
-from dataSplit import dataSplit
+from utils.dataSplit import dataSplit
 from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
+#from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
 
 os.environ['CUDA_VISIBLE_DEVICES']='-1' 
 
