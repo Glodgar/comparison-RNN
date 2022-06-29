@@ -55,4 +55,4 @@ def simpleRNN_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y
         y_train_descaled = sc.inverse_transform(y_train)
         y_test_descaled = sc.inverse_transform(y_test)
 
-    drawPlots(dataset, history, y_test_descaled, y_predicted_descaled)
+    drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, epochs, batch_size)

@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
+from savePlots import savePlots
 
-def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):   
+def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model, epochs, batch_size):   
     loss = history.history['loss']
     val_loss = history.history['val_loss']
     epochs_plot = range(len(loss))
@@ -10,7 +11,9 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):
     plt.plot(epochs_plot, loss, 'r', label='train loss')
     plt.plot(epochs_plot, val_loss, 'b', label='val loss')
     plt.legend(loc="upper left")
-    plt.title("train & validation loss")
+    plt_title = "train & validation loss"
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
     
     
     #All data
@@ -18,17 +21,21 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):
     plt.plot(dataset[0], color = 'black', linewidth=1, label = 'True value')
     plt.ylabel("T (degC)")
     plt.xlabel("Day")
-    plt.title("All data")
+    plt_title = "All data"
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
 
 
     #Predicted data
-    plt.figure()
+    plt.figure(plt_title)
     plt.plot(y_test_descaled, color = 'black', linewidth=1, label = 'True value')
     plt.plot(y_predicted_descaled, color = 'red',  linewidth=1, label = 'Predicted')
     plt.legend(frameon=False)
     plt.ylabel("Temperature")
     plt.xlabel("Day")
-    plt.title("Predicted data")
+    plt_title = "Predicted data"
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
 
     
     #Predicted data for 75 days
@@ -38,7 +45,9 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):
     plt.legend(frameon=False)
     plt.ylabel("Temperature")
     plt.xlabel("Day")
-    plt.title("Predicted data for first 75 days")
+    plt_title = "Predicted data for first 75 days"
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
 
     
     #Training curve
@@ -46,7 +55,9 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):
     plt.plot(epochs_plot, loss, color='black')
     plt.ylabel("Loss (MSE)")
     plt.xlabel("Epoch")
-    plt.title("Training curve")
+    plt_title = "Training curve"
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
 
     
     #Residual plot
@@ -54,7 +65,9 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):
     plt.plot(y_test_descaled-y_predicted_descaled, color='black')
     plt.ylabel("Residual")
     plt.xlabel("Day")
-    plt.title("Residual plot")
+    plt_title = "Residual plot"
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
 
     
     #Scatter plot
@@ -62,7 +75,9 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled):
     plt.scatter(y_predicted_descaled, y_test_descaled, s=2, color='black')
     plt.ylabel("Y true")
     plt.xlabel("Y predicted")
-    plt.title("Scatter plot")
+    plt_title = "Scatter plot" 
+    plt.title(plt_title)
+    savePlots(model, epochs, batch_size, plt_title)
 
         
     #plt.subplots_adjust(hspace = 0.5, wspace=0.3)
