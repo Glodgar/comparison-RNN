@@ -5,7 +5,7 @@ from config.default_config import *
 
 from utils.dataSplit import dataSplit
 from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
-#from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
+
 
 os.environ['CUDA_VISIBLE_DEVICES']='-1' 
 
