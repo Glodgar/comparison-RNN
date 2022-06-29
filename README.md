@@ -32,7 +32,7 @@ Comparison efficency of SimpleRNN, LSTM and GRU
     │   │   │   ├── ResidualPlot.png
     │   │   │   ├── ScatterPlot.png
     │   │   │   ├── Train&ValidationLoss.png
-    │   │   │   └──TrainingCurve.png
+    │   │   │   └── TrainingCurve.png
     │   │   ├── history
     │   │   │   └── history.csv
     │   │   └── weights
