@@ -14,19 +14,19 @@ test_days = 500
 
 verbose = 1
 
-modify_data_EMA = True
+#modify_data_EMA = True
 
 T = True #temperature
 # Tpot = True #temperature in klevin
-p = True #pressure
+#p = True #pressure
 # Tdew = True #temperature (dew point)
 # rh = True #relative humidity
 # VPmax = True #saturation vapor pressure
 # VPact = True #vaport pressure
 # VPdef = True #vaport pressure deficit
 # sh  = True #specific humidity
-H2OC = True #water vaport concetraton
+#H2OC = True #water vaport concetraton
 # rho = True #airtight
 # wv = True #wind speed
-max_wv = True #max wind speed
+#max_wv = True #max wind speed
 # wd = True #wind direction in degrees

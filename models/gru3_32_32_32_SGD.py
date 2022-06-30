@@ -17,8 +17,8 @@ from utils.saveAverageDistance import saveAverageDistance
 def gru3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
 
-    model.add(GRU(32, input_shape=(x_train.shape[1], spec_count)))
-    model.add(GRU(32, input_shape=(x_train.shape[1], spec_count)))
+    model.add(GRU(32, input_shape=(x_train.shape[1], spec_count), return_sequences=True))
+    model.add(GRU(32, input_shape=(x_train.shape[1], spec_count), return_sequences=True))
     model.add(GRU(32, input_shape=(x_train.shape[1], spec_count)))
     model.add(Dense(1))
 
