@@ -12,16 +12,14 @@ from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
 
-def simpleRNN_32_RMSprop(x_train, y_train,
-                         x_validation, y_validation, 
-                         x_test, y_test, 
-                         spec_count, 
-                         dataset, 
-                         sc):
+def simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
+
     model.add(SimpleRNN(32, input_shape=(x_train.shape[1], spec_count)))
     model.add(Dense(1))
+
     model.compile(optimizer=RMSprop(), loss='mae')
+    
     model.summary()
 
     start_time = time.time()

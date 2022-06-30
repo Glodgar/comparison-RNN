@@ -1,5 +1,5 @@
 from keras.models import Sequential
-from keras.layers import LSTM
+from keras.layers import SimpleRNN
 from keras.layers import Dense
 from keras.optimizers import RMSprop
 import time
@@ -12,16 +12,16 @@ from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
 
-def LSTM_32_RMSprop(x_train, y_train,
-                         x_validation, y_validation, 
-                         x_test, y_test, 
-                         spec_count, 
-                         dataset, 
-                         sc):
+def simpleRNN3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
-    model.add(LSTM(32, input_shape=(x_train.shape[1], spec_count)))
+
+    model.add(SimpleRNN(64, input_shape=(x_train.shape[1], spec_count)))
+    model.add(SimpleRNN(32, input_shape=(x_train.shape[1], spec_count)))
+    model.add(SimpleRNN(16, input_shape=(x_train.shape[1], spec_count)))
     model.add(Dense(1))
+
     model.compile(optimizer=RMSprop(), loss='mae')
+
     model.summary()
 
     start_time = time.time()

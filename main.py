@@ -4,8 +4,10 @@ from sklearn.preprocessing import MinMaxScaler
 from config.config import *
 
 from utils.dataSplit import dataSplit
-from models.simpleRNN_32_RMSprop import simpleRNN_32_RMSprop
-from models.LSTM_32_RMSprop import LSTM_32_RMSprop
+
+from models.simpleRNN1_32_RMSprop import simpleRNN1_32_RMSprop
+from models.LSTM1_32_RMSprop import LSTM1_32_RMSprop
+from models.GRU1_32_RMSprop import GRU1_32_RMSprop
 
 spec_count = sum([dateTime, T, Tpot, p, Tdew, rh, VPmax, VPact, VPdef, sh, H2OC, rho, wv, max_wv, wd])
 
@@ -50,19 +52,13 @@ x_test, y_test = dataSplit(test_set, lookback)
 # print(x_validation.shape)
 # print(x_test.shape)
 
-simpleRNN_32_RMSprop(x_train, y_train,
-                     x_validation, y_validation, 
-                     x_test, y_test, 
-                     spec_count, 
-                     dataset, 
-                     sc)
+simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
 
-LSTM_32_RMSprop(x_train, y_train,
-                     x_validation, y_validation, 
-                     x_test, y_test, 
-                     spec_count, 
-                     dataset, 
-                     sc)
+LSTM1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+
+GRU1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+
+
 
 print("DONE")
 
