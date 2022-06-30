@@ -1,6 +1,7 @@
 import os
 from utils.getSpecifications import getSpecifications
 from utils.getModelName import getModelName
+from config.config import *
 
 def isDirectoryExist(model):
     #..\
@@ -10,6 +11,9 @@ def isDirectoryExist(model):
         print("created directory:", path, "\n")
 
     path += "\\" 
+
+    if modify_data_EMA:
+        path += "EMA_"
     
     #..\results
     path += getSpecifications()

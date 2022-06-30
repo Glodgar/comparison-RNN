@@ -25,7 +25,12 @@ def getModelName(model):
     # print("layers sequences length:", units)
     # print(units)
 
-    name = str(tab_layers[0])
+    name = ""
+
+    if modify_data_EMA:
+        name += "EMA_"
+
+    name += str(tab_layers[0])
     name += str(tab_layers_count[0])
     name += "_units_"
     name += str(units)

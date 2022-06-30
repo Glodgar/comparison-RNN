@@ -13,3 +13,5 @@ rho = False
 wv = False
 max_wv = False
 wd = False
+
+modify_data_EMA = False
