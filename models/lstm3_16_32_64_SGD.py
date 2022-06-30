@@ -12,7 +12,7 @@ from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
 
-def lstm1_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
+def lstm3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
 
     model.add(LSTM(16, input_shape=(x_train.shape[1], spec_count)))
