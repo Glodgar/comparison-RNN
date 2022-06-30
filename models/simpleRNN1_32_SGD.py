@@ -1,7 +1,7 @@
 from keras.models import Sequential
 from keras.layers import SimpleRNN
 from keras.layers import Dense
-from keras.optimizers import RMSprop
+from keras.optimizers import SGD
 import time
 from sklearn.preprocessing import MinMaxScaler
 import numpy as np
@@ -12,13 +12,13 @@ from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
 
-def simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
+def simpleRNN1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
 
     model.add(SimpleRNN(32, input_shape=(x_train.shape[1], spec_count)))
     model.add(Dense(1))
 
-    model.compile(optimizer="SGD", loss='mae')
+    model.compile(optimizer=SGD(), loss='mae')
     
     model.summary()
 

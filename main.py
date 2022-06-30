@@ -6,8 +6,8 @@ from config.config import *
 from utils.dataSplit import dataSplit
 
 from models.simpleRNN1_32_RMSprop import simpleRNN1_32_RMSprop
-from models.LSTM1_32_RMSprop import LSTM1_32_RMSprop
-from models.GRU1_32_RMSprop import GRU1_32_RMSprop
+from models.lstm1_32_RMSprop import LSTM1_32_RMSprop
+from models.gru1_32_RMSprop import GRU1_32_RMSprop
 
 spec_count = sum([dateTime, T, Tpot, p, Tdew, rh, VPmax, VPact, VPdef, sh, H2OC, rho, wv, max_wv, wd])
 
