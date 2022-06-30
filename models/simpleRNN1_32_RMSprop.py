@@ -1,3 +1,4 @@
+import imp
 from keras.models import Sequential
 from keras.layers import SimpleRNN
 from keras.layers import Dense
@@ -11,6 +12,8 @@ from config.config import *
 from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
+from utils.saveTime import saveTime
+from utils.saveAverageDistance import saveAverageDistance
 
 def simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
@@ -32,11 +35,12 @@ def simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, 
     
     end_time = round(time.time() - start_time, 2)
 
-    saveHistory(model, history)
-    saveWeights(model)
-    
     print("time: ", end_time)
 
+    saveHistory(model, history)
+    saveWeights(model)
+    saveTime(model, end_time)
+    
     y_predicted = model.predict(x_test)
     
     if spec_count>1:
@@ -60,4 +64,5 @@ def simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, 
         y_train_descaled = sc.inverse_transform(y_train)
         y_test_descaled = sc.inverse_transform(y_test)
 
+    saveAverageDistance(model, y_predicted_descaled, y_test_descaled)
     drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model)

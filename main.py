@@ -81,34 +81,34 @@ x_test, y_test = dataSplit(test_set, lookback)
 simpleRNN1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
 lstm1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
 gru1_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-# 32 SGD
-simpleRNN1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 32 SGD
+# simpleRNN1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru1_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
 
-# 32 32 32 RMSprop
-simpleRNN3_32_32_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm3_32_32_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru3_32_32_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-# 32 32 32SGD
-simpleRNN3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 32 32 32 RMSprop
+# simpleRNN3_32_32_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm3_32_32_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru3_32_32_32_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 32 32 32SGD
+# simpleRNN3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru3_32_32_32_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
 
-# 16 32 64 RMSprop
-simpleRNN3_16_32_64_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm3_16_32_64_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru3_16_32_64_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-# 16 32 64SGD
-simpleRNN3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 16 32 64 RMSprop
+# simpleRNN3_16_32_64_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm3_16_32_64_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru3_16_32_64_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 16 32 64SGD
+# simpleRNN3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru3_16_32_64_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
 
-# 64 32 16 RMSprop
-simpleRNN3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-# 64 32 16 SGD
-simpleRNN3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-lstm3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
-gru3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 64 32 16 RMSprop
+# simpleRNN3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# # 64 32 16 SGD
+# simpleRNN3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# lstm3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)
+# gru3_64_32_16_SGD(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc)

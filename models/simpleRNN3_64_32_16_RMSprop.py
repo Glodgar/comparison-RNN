@@ -11,6 +11,8 @@ from config.config import *
 from utils.drawPlots import drawPlots
 from utils.saveHistory import saveHistory
 from utils.saveWeights import saveWeights
+from utils.saveTime import saveTime
+from utils.saveAverageDistance import saveAverageDistance
 
 def simpleRNN3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_test, y_test, spec_count, dataset, sc):
     model = Sequential()
@@ -34,11 +36,12 @@ def simpleRNN3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_
     
     end_time = round(time.time() - start_time, 2)
 
+    print("time: ", end_time)
+    
     saveHistory(model, history)
     saveWeights(model)
+    saveTime(model, end_time)
     
-    print("time: ", end_time)
-
     y_predicted = model.predict(x_test)
     
     if spec_count>1:
@@ -62,4 +65,5 @@ def simpleRNN3_64_32_16_RMSprop(x_train, y_train, x_validation, y_validation, x_
         y_train_descaled = sc.inverse_transform(y_train)
         y_test_descaled = sc.inverse_transform(y_test)
 
+    saveAverageDistance(model, y_predicted_descaled, y_test_descaled)
     drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model)
