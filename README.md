@@ -54,35 +54,35 @@
 | ------------- |:---------------------:|:----------------:| ----------------:|
 |               | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-|               ├──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-|               ├──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |    RMSprop    | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64)  |
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-|               ├──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |               | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64)  |
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-├───────────────┼──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |               | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-|               ├──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-|               ├──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |      SGD      | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64)  |
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)     |
 |               | Dense(None,1)         | Dense(None,1)    | Dense(None,1)    |
-|               ├──────────────────────┼───────────────────┼──────────────────┤
+|               ├───────────────────────┼──────────────────┼──────────────────┤
 |               | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64)  |
 |               | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32)  |
 |               | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)     |
