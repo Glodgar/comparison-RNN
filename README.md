@@ -132,8 +132,8 @@
 <tr>
 <td><img src = 'results/T/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png'>
 
-<!-- <td><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png'> -->
+<td><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png'>
 
-<td><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' >
+<!-- <td><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' > -->
 </tr>
 </table>
