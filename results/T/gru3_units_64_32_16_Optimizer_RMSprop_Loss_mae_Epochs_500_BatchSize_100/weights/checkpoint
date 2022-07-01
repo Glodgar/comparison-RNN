@@ -1,0 +1,2 @@
+model_checkpoint_path: "gru3_units_64_32_16_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100.HDF5"
+all_model_checkpoint_paths: "gru3_units_64_32_16_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100.HDF5"

@@ -2,6 +2,7 @@ import os
 from utils.getModelName import getModelName
 from utils.getSpecifications import getSpecifications
 import pandas as pd
+from config.config import *
 
 def saveTime(model, end_time):
     name = getModelName(model)
@@ -17,6 +18,8 @@ def saveTime(model, end_time):
     path += "\\" 
     
     #..\results\\
+    if modify_data_EMA:
+        path += "EMA_"
     path += getSpecifications()
     if not os.path.exists(path):
         os.mkdir(path)
@@ -24,6 +27,10 @@ def saveTime(model, end_time):
     #..\results\\T_p_H2OC_maxWv
 
     path += "\\"
+
+    if modify_data_EMA:
+        path += "EMA_"
+
     path += "time_"
     path += getSpecifications()
     path += ".csv"

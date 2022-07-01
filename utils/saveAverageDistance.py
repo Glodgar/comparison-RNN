@@ -2,6 +2,7 @@ import os
 from utils.getModelName import getModelName
 from utils.getSpecifications import getSpecifications
 import pandas as pd
+from config.config import *
 
 def saveAverageDistance(model, y_predicted_descaled, y_test_descaled):
     sum_value = 0
@@ -25,6 +26,8 @@ def saveAverageDistance(model, y_predicted_descaled, y_test_descaled):
     path += "\\" 
     
     #..\results\\
+    if modify_data_EMA:
+        path += "EMA_"
     path += getSpecifications()
     if not os.path.exists(path):
         os.mkdir(path)
@@ -32,6 +35,10 @@ def saveAverageDistance(model, y_predicted_descaled, y_test_descaled):
     #..\results\\T_p_H2OC_maxWv
 
     path += "\\"
+
+    if modify_data_EMA:
+        path += "EMA_"
+
     path += "averageDistance_"
     path += getSpecifications()
     path += ".csv"

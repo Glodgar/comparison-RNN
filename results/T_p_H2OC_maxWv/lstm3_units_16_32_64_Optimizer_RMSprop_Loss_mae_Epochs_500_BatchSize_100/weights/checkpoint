@@ -1,0 +1,2 @@
+model_checkpoint_path: "lstm3_units_16_32_64_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100.HDF5"
+all_model_checkpoint_paths: "lstm3_units_16_32_64_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100.HDF5"

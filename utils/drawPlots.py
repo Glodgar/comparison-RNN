@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 from utils.savePlots import savePlots
 
 from config.config import *
@@ -79,7 +80,22 @@ def drawPlots(dataset, history, y_test_descaled, y_predicted_descaled, model):
     plt.xlabel("Y predicted")
     plt_title = "Scatter plot" 
     plt.title(plt_title)
+    savePlots(model, plt_title)    
+
+
+    predicted_range = np.arange(len(y_predicted_descaled[0:75]))
+    difference = abs((y_test_descaled[0:75] - y_predicted_descaled[0:75]) / y_test_descaled[0:75] * 100)
+    tab_difference = []
+    for i in range(len(y_predicted_descaled[0:75])):
+        tab_difference.append(difference[i][0])
+    plt.figure()
+    plt.bar(predicted_range, tab_difference)
+    plt.ylabel("%")
+    plt.xlabel("Days")
+    plt_title = "Prediction mistake" 
+    plt.title(plt_title)
     savePlots(model, plt_title)
+    
 
         
     #plt.subplots_adjust(hspace = 0.5, wspace=0.3)

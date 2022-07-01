@@ -1,0 +1,2 @@
+model_checkpoint_path: "EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100.HDF5"
+all_model_checkpoint_paths: "EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100.HDF5"
