@@ -122,11 +122,28 @@
 |SGD       |lstm3_64_32_16_SGD         |3.4263785342488977 |
 |          |gru3_64_32_16_SGD          |2.994584340730189  |
 
-
+### Train & Validation Loss
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
-<!-- <th> lstm1_32_RMSprop </th> -->
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+
+<td><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+
+<td><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+</tr>
+</table>
+
+
+### Predicted Data For First 75 Days
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
 <th> gru1_32_SGD </th>
 </tr>
 <tr>
@@ -135,5 +152,39 @@
 <td><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
 
 <td><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+</tr>
+</table>
+
+
+### Scatter Plots
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+
+<td><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+
+<td><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+</tr>
+</table>
+
+
+### Prediction Mistake
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+
+<td><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+
+<td><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
 </tr>
 </table>
