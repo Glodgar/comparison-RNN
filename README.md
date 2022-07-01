@@ -16,11 +16,6 @@
 ![Ilustration of data](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/data.png)
 
 ## Folders structure
-<p align="center">
-<!--   ![Folders structure](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/files_tree.png) -->
-  <img src="https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/files_tree.png" title="Files tree" alt="Files tree">
-</p>
-
 ```
 └── results 
     ├── specifications_1
@@ -52,43 +47,43 @@
 ```
 
 ## Models
-| Optimizers | SimpleRNN             | LSTM             | GRU             |
-|:----------:|:---------------------:|:----------------:|:---------------:|
-|            | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|            |───────────────────────|──────────────────|─────────────────|
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|            |───────────────────────|──────────────────|─────────────────|
-| RMSprop    | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64) |
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|            |───────────────────────|──────────────────|─────────────────|
-|            | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64) |
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|────────────|───────────────────────|──────────────────|─────────────────|
-|            | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|            |───────────────────────|──────────────────|─────────────────|
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,32)    | LSTM(None,32)    | GRU(None,32)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|            |───────────────────────|──────────────────|─────────────────|
-| SGD        | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64) |
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
-|            |───────────────────────|──────────────────|─────────────────|
-|            | SimpleRNN(None,10,64) | LSTM(None,10,64) | GRU(None,10,64) |
-|            | SimpleRNN(None,10,32) | LSTM(None,10,32) | GRU(None,10,32) |
-|            | SimpleRNN(None,16)    | LSTM(None,16)    | GRU(None,16)    |
-|            | Dense(None,1)         | Dense(None,1)    | Dense(None,1)   |
+|Optimizers|SimpleRNN            | LSTM           |GRU            |
+|:--------:|:-------------------:|:--------------:|:-------------:|
+|          |SimpleRNN(None,32)   | LSTM(None,32)  |GRU(None,32)   |
+|          |Dense(None,1)        | Dense(None,1)  |Dense(None,1)  |
+|          |─────────────────────|────────────────|───────────────|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|          |─────────────────────|────────────────|───────────────|
+| RMSprop  |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|          |─────────────────────|────────────────|───────────────|
+|          |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|──────────|─────────────────────|────────────────|───────────────|
+|          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|          |─────────────────────|────────────────|───────────────|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|          |─────────────────────|────────────────|───────────────|
+| SGD      |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|          |─────────────────────|────────────────|───────────────|
+|          |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
+|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
+|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
 
 <!-- ├ ┬ ┼  ┤ -->
 
@@ -126,3 +121,14 @@
 |64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388 |
 |SGD       |lstm3_64_32_16_SGD         |3.4263785342488977|
 |          |gru3_64_32_16_SGD          |2.994584340730189 |
+
+
+<table align="center">
+<tr>
+<td><><img src = 'results/T/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '300'>
+
+<td><><img src = 'results/T/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '300'>
+
+<td><><img src = 'results/T/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '300'>
+</tr>
+</table>
