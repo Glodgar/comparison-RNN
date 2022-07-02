@@ -99,35 +99,39 @@
 </tr>
 
 <tr align='center'>
-    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2.6451327808128315 <br>2.634731841976658 <br>2.6331591564837304</td> 
+    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2,6451 <br>2,6347 <br>2,6332</td> 
 </tr>
 
 <tr align='center'>
-    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2.618292828682733 <br>2.8037038837881125 <br>2.62076415815729</td> 
+    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2,6183 <br>2,8037 <br>2,6208</td> 
 </tr>
 
 <tr align='center'>
-    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2.865973051694582<br>2.729212822038299<br>2.745191264720594
+    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2,8660<br>2,7292<br>2,7452
 </tr>
 
 <tr align='center'>
-    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2.6650527978019385 <br>3.445523014778766 <br>2.7250013006201805
+    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2,6651 <br>3,4455 <br>2,9858
+</tr>
+
+
+
+<tr align='center'>
+    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2,7898 <br>2,7823 <br>2,7250
 </tr>
 
 <tr align='center'>
-    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2.7898178471202146 <br>2.782277435279318 <br>2.7250013006201805
+    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2,7576 <br>3,4385 <br>3,0342
+</tr>
+
+
+
+<tr align='center'>
+    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3,0799 <br>2,7002 <br>2,7347
 </tr>
 
 <tr align='center'>
-    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2.75758577485546 <br>3.4385166828121463 <br>3.0341526444499607
-</tr>
-
-<tr align='center'>
-    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3.079921303027137 <br>2.700237106817222 <br>2.7347319761429514
-</tr>
-
-<tr align='center'>
-    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2.840829965699388 <br>3.4263785342488977 <br>2.994584340730189
+    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2,8408 <br>3,4264 <br>2,9946
 </tr>
 </table>
 
@@ -236,6 +240,10 @@
 <!-- Results for T_p_H2OC_maxWv -->
 ## Results for T_p_H2OC_maxWv
 <table align="center">
+<tr align='center'>
+    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
+</tr>
+
 <tr align="center">
     <td> 32_RMSprop <td> simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop <td>2,8371 <br>2,9501 <br>2,8693
 </tr>
