@@ -91,7 +91,7 @@
 <!-- ├ ┬ ┼  ┤ -->
 
 <!-- Results for t -->
-### Results for T
+## Results for T
 ### Average distance for T
 <table align="center">
 <tr align='center'>
@@ -170,7 +170,7 @@
 |          |gru3_64_32_16_SGD          |2.994584340730189   | -->
 
 
-### Train & Validation Loss
+### Train & Validation Loss (T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -187,7 +187,7 @@
 </table>
 
 
-### Predicted Data For First 75 Days
+### Predicted Data For First 75 Days (T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -204,7 +204,7 @@
 </table>
 
 
-### Scatter Plots
+### Scatter Plots (T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -221,7 +221,7 @@
 </table>
 
 
-### Prediction Mistake
+### Prediction Mistake (T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -239,6 +239,7 @@
 
 <!-- Results for T_p_H2OC_maxWv -->
 ## Results for T_p_H2OC_maxWv
+### Average distance for T_p_H2OC_maxWv
 <table align="center">
 <tr align='center'>
     <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
@@ -281,7 +282,7 @@
     <td> <td> <br> <br> <td> <br> <br>
 </tr> -->
 
-### Train & Validation Loss
+### Train & Validation Loss (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_RMSprop </th>
@@ -298,7 +299,7 @@
 </table>
 
 
-### Predicted Data For First 75 Days
+### Predicted Data For First 75 Days (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_RMSprop </th>
@@ -315,7 +316,7 @@
 </table>
 
 
-### Scatter Plots
+### Scatter Plots (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_RMSprop </th>
@@ -332,7 +333,7 @@
 </table>
 
 
-### Prediction Mistake
+### Prediction Mistake (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_RMSprop </th>
@@ -348,8 +349,8 @@
 </tr>
 </table>
 
-
-## EMA_data for T
+## Results for EMA_T
+### data for EMA_T
 <table align="center">
 <tr align='center'>
     <th> EMA temperature </th>
@@ -359,8 +360,18 @@
 </tr>
 </table>
 
+<!-- Results for T_p_H2OC_maxWv -->
+### Average distance for EMA_T
+<table align="center">
+<tr align='center'>
+    <td>model</td> <td>averageDistance [degC]</td> 
+</tr>
 
-### Train & Validation Loss
+<tr align="center">
+    <td> EMA_lstm1_32_RMSprop <br>EMA_simplernn1_32_SGD <br>EMA_gru1_32_SGD <td>2,6568 <br>2,5941 <br>2,6319
+</tr>
+
+### Train & Validation Loss (EMA_T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -377,7 +388,7 @@
 </table>
 
 
-### Predicted Data For First 75 Days
+### Predicted Data For First 75 Days (EMA_T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -394,7 +405,7 @@
 </table>
 
 
-### Scatter Plots
+### Scatter Plots (EMA_T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
@@ -411,7 +422,7 @@
 </table>
 
 
-### Prediction Mistake
+### Prediction Mistake (EMA_T)
 <table align="center">
 <tr align='center'>
 <th> simplernn1_32_SGD </th>
