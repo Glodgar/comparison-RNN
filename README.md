@@ -129,6 +129,17 @@
 |          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
 |          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
 
+
+
+|             |          Grouping           ||
+First Header  | Second Header | Third Header |
+ ------------ | :-----------: | -----------: |
+Content       |          *Long Cell*        ||
+Content       |   **Cell**    |         Cell |
+
+New section   |     More      |         Data |
+And more      | With an escaped '\|'         ||  
+[Prototype table]
 <!-- ├ ┬ ┼  ┤ -->
 
 <!-- Results for t -->
