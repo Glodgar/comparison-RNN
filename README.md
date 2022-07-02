@@ -327,7 +327,7 @@
     <td>model</td> <td>averageDistance [degC] <td> learning time [sec]
 </tr>
 <tr align="center">
-    <td> EMA_lstm1_32_RMSprop <br>EMA_simplernn1_32_SGD <br>EMA_gru1_32_SGD <td>2,6568 <br>2,5941 <br>2,6319 <td>53,32 <br>35,61 <br>50,0
+    <td> EMA_lstm1_32_RMSprop <br>EMA_simplernn1_32_SGD <br>EMA_gru1_32_SGD <td>0.9138 <br>0.8946 <br>1.1272 <td>47.66 <br>41.67 <br>83.61
 </tr>
 </table>
 

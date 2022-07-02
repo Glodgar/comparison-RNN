@@ -14,7 +14,7 @@ test_days = 500
 
 verbose = 1
 
-# modify_data_EMA = True
+modify_data_EMA = True
 
 T = True #temperature
 # Tpot = True #temperature in klevin
