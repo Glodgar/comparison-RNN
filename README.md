@@ -196,27 +196,15 @@
 ## Average distance for T
 <table align="center">
 <tr align='center'>
-    <td></td> <td>model</td> <td>averageDistance</td> 
+    <td>units_optimizer</td> <td>model</td> <td>averageDistance</td> 
 </tr>
 
 <tr align='center'>
-    <td></td> <td>model</td> <td>averageDistance</td> 
+    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2.6451327808128315 <br>2.634731841976658 <br>2.6331591564837304</td> 
 </tr>
 
 <tr align='center'>
-    <td>
-        32_SGD
-    </td>
-    <td>
-        simplernn1_32_RMSprop <br>
-        `lstm1_32_RMSprop` <br>
-        gru1_32_RMSprop  
-    </td>
-    <td>
-        2.6451327808128315 <br>
-        `2.634731841976658` <br>
-        2.6331591564837304
-    </td> 
+    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2.618292828682733 <br>2.8037038837881125 <br>2.62076415815729</td> 
 </tr>
 </table>
 |          |model                      |averageDistance    |
