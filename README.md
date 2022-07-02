@@ -1,4 +1,4 @@
-# Comparison efficency of SimpleRNN, LSTM and GRU
+# Comparison efficency of SimpleRNN, LSTM and GRU in processing of sequences
 
 ## Development Environment
 * CPU: Intel(R) Core(TM) i5-7600K CPU @ 380GHz 3.79 GHz
@@ -12,9 +12,11 @@
 * Matplotlib: 3.5.1
 * TensorFlow: 2.10.0
 
+<!-- dataset -->
 ## Dataset
 ![Ilustration of data](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/data.png)
 
+<!-- foders structure -->
 ## Folders structure
 ```
 └── results 
@@ -46,6 +48,7 @@
     └── ...
 ```
 
+<!-- models -->
 ## Models
 |Optimizers|SimpleRNN            | LSTM           |GRU            |
 |:--------:|:-------------------:|:--------------:|:-------------:|
@@ -87,9 +90,48 @@
 
 <!-- ├ ┬ ┼  ┤ -->
 
+<!-- Results for t -->
 ### Results for T
 ### Average distance for T
-|          |model                      |averageDistance degC|
+<table align="center">
+<tr align='center'>
+    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
+</tr>
+
+<tr align='center'>
+    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2.6451327808128315 <br>2.634731841976658 <br>2.6331591564837304</td> 
+</tr>
+
+<tr align='center'>
+    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2.618292828682733 <br>2.8037038837881125 <br>2.62076415815729</td> 
+</tr>
+
+<tr align='center'>
+    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2.865973051694582<br>2.729212822038299<br>2.745191264720594
+</tr>
+
+<tr align='center'>
+    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2.6650527978019385 <br>3.445523014778766 <br>2.7250013006201805
+</tr>
+
+<tr align='center'>
+    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2.7898178471202146 <br>2.782277435279318 <br>2.7250013006201805
+</tr>
+
+<tr align='center'>
+    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2.75758577485546 <br>3.4385166828121463 <br>3.0341526444499607
+</tr>
+
+<tr align='center'>
+    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3.079921303027137 <br>2.700237106817222 <br>2.7347319761429514
+</tr>
+
+<tr align='center'>
+    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2.840829965699388 <br>3.4263785342488977 <br>2.994584340730189
+</tr>
+</table>
+
+<!-- |          |model                      |averageDistance degC|
 |:--------:|:-------------------------:|:------------------:|
 |32        |simplernn1_32_RMSprop      |2.6451327808128315  |
 |RMSprop   |`lstm1_32_RMSprop`         |`2.634731841976658` |
@@ -121,7 +163,7 @@
 |──────────|───────────────────────────|────────────────────|
 |64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388   |
 |SGD       |lstm3_64_32_16_SGD         |3.4263785342488977  |
-|          |gru3_64_32_16_SGD          |2.994584340730189   |
+|          |gru3_64_32_16_SGD          |2.994584340730189   | -->
 
 
 ### Train & Validation Loss
@@ -191,81 +233,46 @@
 </tr>
 </table>
 
-
-### Average distance for T
+<!-- Results for T_p_H2OC_maxWv -->
+## Results for T_p_H2OC_maxWv
 <table align="center">
-<tr align='center'>
-    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
+<tr align="center">
+    <td> 32_RMSprop <td> simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop <td>2,8371 <br>2,9501 <br>2,8693
 </tr>
 
-<tr align='center'>
-    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2.6451327808128315 <br>2.634731841976658 <br>2.6331591564837304</td> 
+<tr align="center">
+    <td>32_SGD <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD <td>3,0006 <br>3,0140 <br>2,6824
 </tr>
 
-<tr align='center'>
-    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2.618292828682733 <br>2.8037038837881125 <br>2.62076415815729</td> 
+<tr align="center">
+    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>4,0512 <br>3,0534 <br>3,4401
 </tr>
 
-<tr align='center'>
-    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2.865973051694582<br>2.729212822038299<br>2.745191264720594
+<tr align="center">
+    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>3,3595 <br>3,8607 <br>3,1698
 </tr>
 
-<tr align='center'>
-    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2.6650527978019385 <br>3.445523014778766 <br>2.7250013006201805
+<tr align="center">
+    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>3,6657 <br>3,3600 <br>3,4465
 </tr>
 
-<tr align='center'>
-    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2.7898178471202146 <br>2.782277435279318 <br>2.7250013006201805
+<tr align="center">
+    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>3,0533 <br>4,0238 <br>3,1776
 </tr>
 
-<tr align='center'>
-    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2.75758577485546 <br>3.4385166828121463 <br>3.0341526444499607
+<tr align="center">
+    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>4,0028 <br>3,6192 <br>3,8740
 </tr>
 
-<tr align='center'>
-    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3.079921303027137 <br>2.700237106817222 <br>2.7347319761429514
-</tr>
-
-<tr align='center'>
-    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2.840829965699388 <br>3.4263785342488977 <br>2.994584340730189
+<tr align="center">
+    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD <td>3,2403 <br>3,7618 <br>2,9983
 </tr>
 </table>
-<!-- 
-|          |model                      |averageDistance    |
-|:--------:|:-------------------------:|:-----------------:|
-|32        |simplernn1_32_RMSprop      |2.6451327808128315 |
-|RMSprop   |`lstm1_32_RMSprop`         |`2.634731841976658`|
-|          |gru1_32_RMSprop            |2.6331591564837304 |
-|──────────|───────────────────────────|───────────────────|
-|32        |`simplernn1_32_SGD`        |`2.618292828682733`|
-|SGD       |lstm1_32_SGD               |2.8037038837881125 |
-|          |`gru1_32_SGD`              |`2.62076415815729` |
-|──────────|───────────────────────────|───────────────────|
-|32_32_32  |simplernn3_32_32_32_RMSprop|2.865973051694582  |
-|RMSprop   |lstm3_32_32_32_RMSprop     |2.729212822038299  |
-|          |gru3_32_32_32_RMSprop      |2.745191264720594  |
-|──────────|───────────────────────────|───────────────────|
-|32_32_32  |simplernn3_32_32_32_SGD    |2.6650527978019385 |
-|SGD       |lstm3_32_32_32_SGD         |3.445523014778766  |
-|          |gru3_32_32_32_SGD          |2.9858316431687197 |
-|──────────|───────────────────────────|───────────────────|
-|16_32_64  |simplernn3_16_32_64_RMSprop|2.7898178471202146 |
-|RMSprop   |lstm3_16_32_64_RMSprop     |2.782277435279318  |
-|          |gru3_16_32_64_RMSprop      |2.7250013006201805 |
-|──────────|───────────────────────────|────────────────── |
-|16_32_64  |simplernn3_16_32_64_SGD    |2.75758577485546   |
-|RMSprop   |lstm3_16_32_64_SGD         |3.4385166828121463 |
-|          |gru3_16_32_64_SGD          |3.0341526444499607 |
-|──────────|───────────────────────────|───────────────────|
-|64_32_16  |simplernn3_64_32_16_RMSprop|3.079921303027137  |
-|RMSprop   |lstm3_64_32_16_RMSprop     |2.700237106817222  |
-|          |gru3_64_32_16_RMSprop      |2.7347319761429514 |
-|──────────|───────────────────────────|───────────────────|
-|64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388  |
-|SGD       |lstm3_64_32_16_SGD         |3.4263785342488977 |
-|          |gru3_64_32_16_SGD          |2.994584340730189  | -->
 
-## Results for T_p_H2OC_maxWv
+<!-- <tr>
+    <td> <td> <br> <br> <td> <br> <br>
+</tr> -->
+
 ### Train & Validation Loss
 <table align="center">
 <tr align='center'>
@@ -337,15 +344,12 @@
 ## EMA_data for T
 <table align="center">
 <tr align='center'>
-<th> EMA temperature </th>
+    <th> EMA temperature </th>
 </tr>
 <tr>
-<td><img src = 'img/EMA_data.png' height = '200'>
+    <td><img src = 'img/EMA_data.png' height = '200'>
 </tr>
 </table>
-
-
-
 
 
 ### Train & Validation Loss
