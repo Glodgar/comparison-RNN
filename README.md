@@ -192,8 +192,6 @@
 </table>
 
 
-
-
 ### Average distance for T
 <table align="center">
 <tr align='center'>
@@ -332,5 +330,87 @@
 <td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
 
 <td><img src = 'results/T_p_H2OC_maxWv/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+</tr>
+</table>
+
+
+## EMA_data for T
+<table align="center">
+<tr align='center'>
+<th> EMA temperature </th>
+</tr>
+<tr>
+<td><img src = 'img/EMA_data.png' height = '200'>
+</tr>
+</table>
+
+
+
+
+
+### Train & Validation Loss
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/EMA_T/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+</tr>
+</table>
+
+
+### Predicted Data For First 75 Days
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/EMA_T/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+</tr>
+</table>
+
+
+### Scatter Plots
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/EMA_T/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+</tr>
+</table>
+
+
+### Prediction Mistake
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/EMA_T/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+
+<td><img src = 'results/EMA_T/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
 </tr>
 </table>
