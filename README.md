@@ -50,48 +50,46 @@
 
 <!-- models -->
 ## Models
-<!-- <table align="center">
+<table align="center">
 <tr align='center'>
-    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
+    <td>Optimizers <td>SimpleRNN <td>LSTM <td>GRU
 </tr>
 
 <tr align='center'>
-    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2,6451 <br>2,6347 <br>2,6332</td> 
+    <td>RMSprop <td>SimpleRNN(None,32) <br>Dense(None,1) <td>LSTM(None,32) <br>Dense(None,1) <td>GRU(None,32) <br>Dense(None,1)
 </tr>
 
 <tr align='center'>
-    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2,6183 <br>2,8037 <br>2,6208</td> 
+    <td>RMSprop <td>SimpleRNN(None,10,32) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,32) <br>Dense(None,1) <td>LSTM(None,10,32) <br>LSTM(None,10,32) <br>LSTM(None,32) <br>Dense(None,1) <td>GRU(None,10,32) <br>GRU(None,10,32) <br>GRU(None,32) <br>Dense(None,1)
 </tr>
 
 <tr align='center'>
-    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2,8660<br>2,7292<br>2,7452
+    <td>RMSprop <td>SimpleRNN(None,10,64) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,16) <br>Dense(None,1) <td>LSTM(None,10,64) <br>LSTM(None,10,32) <br>LSTM(None,16) <br>Dense(None,1) <td>GRU(None,10,64) <br>GRU(None,10,32) <br>GRU(None,16) <br>Dense(None,1)
 </tr>
 
 <tr align='center'>
-    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2,6651 <br>3,4455 <br>2,9858
+    <td>RMSprop <td>SimpleRNN(None,10,16) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,64) <br>Dense(None,1) <td>LSTM(None,10,16) <br>LSTM(None,10,32) <br>LSTM(None,64) <br>Dense(None,1) <td>GRU(None,10,16) <br>GRU(None,10,32) <br>GRU(None,64) <br>Dense(None,1)
 </tr>
 
-
-
-<tr align='center'>
-    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2,7898 <br>2,7823 <br>2,7250
-</tr>
+<br><br>
 
 <tr align='center'>
-    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2,7576 <br>3,4385 <br>3,0342
-</tr>
-
-
-
-<tr align='center'>
-    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3,0799 <br>2,7002 <br>2,7347
+    <td>SGD <td>SimpleRNN(None,32) <br>Dense(None,1) <td>LSTM(None,32) <br>Dense(None,1) <td>GRU(None,32) <br>Dense(None,1)
 </tr>
 
 <tr align='center'>
-    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2,8408 <br>3,4264 <br>2,9946
+    <td>SGD <td>SimpleRNN(None,10,32) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,32) <br>Dense(None,1) <td>LSTM(None,10,32) <br>LSTM(None,10,32) <br>LSTM(None,32) <br>Dense(None,1) <td>GRU(None,10,32) <br>GRU(None,10,32) <br>GRU(None,32) <br>Dense(None,1)
 </tr>
-</table> -->
-|Optimizers|SimpleRNN            | LSTM           |GRU            |
+
+<tr align='center'>
+    <td>SGD <td>SimpleRNN(None,10,64) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,16) <br>Dense(None,1) <td>LSTM(None,10,64) <br>LSTM(None,10,32) <br>LSTM(None,16) <br>Dense(None,1) <td>GRU(None,10,64) <br>GRU(None,10,32) <br>GRU(None,16) <br>Dense(None,1)
+</tr>
+
+<tr align='center'>
+    <td>SGD <td>SimpleRNN(None,10,16) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,64) <br>Dense(None,1) <td>LSTM(None,10,16) <br>LSTM(None,10,32) <br>LSTM(None,64) <br>Dense(None,1) <td>GRU(None,10,16) <br>GRU(None,10,32) <br>GRU(None,64) <br>Dense(None,1)
+</tr>
+</table>
+<!-- |Optimizers|SimpleRNN            | LSTM           |GRU            |
 |:--------:|:-------------------:|:--------------:|:-------------:|
 |          |SimpleRNN(None,32)   | LSTM(None,32)  |GRU(None,32)   |
 |          |Dense(None,1)        | Dense(None,1)  |Dense(None,1)  |
@@ -128,9 +126,8 @@
 |          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
 |          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
 |          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-
 |          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
+|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  | -->
 
 <!-- ├ ┬ ┼  ┤ -->
 
