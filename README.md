@@ -1,5 +1,5 @@
 # Comparison efficency of SimpleRNN, LSTM and GRU in processing of sequences
-
+<!-- ├ ┬ ┼  ┤ -->
 ## Development Environment
 * CPU: Intel(R) Core(TM) i5-7600K CPU @ 380GHz 3.79 GHz
 * Ram: 16.0 GB 
@@ -49,7 +49,7 @@
 ```
 
 <!-- models -->
-## Models
+## Models summary
 <table align="center">
 <tr align='center'>
     <td>Optimizers <td>SimpleRNN <td>LSTM <td>GRU
@@ -71,7 +71,6 @@
     <td>RMSprop <td>SimpleRNN(None,10,16) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,64) <br>Dense(None,1) <td>LSTM(None,10,16) <br>LSTM(None,10,32) <br>LSTM(None,64) <br>Dense(None,1) <td>GRU(None,10,16) <br>GRU(None,10,32) <br>GRU(None,64) <br>Dense(None,1)
 </tr>
 
-<br><br>
 
 <tr align='center'>
     <td>SGD <td>SimpleRNN(None,32) <br>Dense(None,1) <td>LSTM(None,32) <br>Dense(None,1) <td>GRU(None,32) <br>Dense(None,1)
@@ -89,126 +88,49 @@
     <td>SGD <td>SimpleRNN(None,10,16) <br>SimpleRNN(None,10,32) <br>SimpleRNN(None,64) <br>Dense(None,1) <td>LSTM(None,10,16) <br>LSTM(None,10,32) <br>LSTM(None,64) <br>Dense(None,1) <td>GRU(None,10,16) <br>GRU(None,10,32) <br>GRU(None,64) <br>Dense(None,1)
 </tr>
 </table>
-<!-- |Optimizers|SimpleRNN            | LSTM           |GRU            |
-|:--------:|:-------------------:|:--------------:|:-------------:|
-|          |SimpleRNN(None,32)   | LSTM(None,32)  |GRU(None,32)   |
-|          |Dense(None,1)        | Dense(None,1)  |Dense(None,1)  |
-|          |─────────────────────|────────────────|───────────────|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|                                                                 |
-| RMSprop  |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|                                                                 |
-|          |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|──────────|─────────────────────|────────────────|───────────────|
-|          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|                                                                 |
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|                                                                 |
-| SGD      |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|                                                                 |
-|          |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
-|          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
-|          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-|          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  | -->
 
-<!-- ├ ┬ ┼  ┤ -->
 
 <!-- Results for t -->
 ## Results (T)
 ### Average distance (T)
 <table align="center">
 <tr align='center'>
-    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
+    <td>model <td>averageDistance [degC] <td> learning time [sec]
 </tr>
 
 <tr align='center'>
-    <td>32_RMSprop</td> <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop</td> <td>2,6451 <br>2,6347 <br>2,6332</td> 
+    <td>simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop <td>2,6451 <br>2,6347 <br>2,6332 <td>29,01 <br>52,54 <br>47,76
 </tr>
 
 <tr align='center'>
-    <td>32_SGD</td> <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2,6183 <br>2,8037 <br>2,6208</td> 
+    <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD</td> <td>2,6183 <br>2,8037 <br>2,6208 <td>33,47 <br>48,52 <br>52,96
 </tr>
 
 <tr align='center'>
-    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2,8660<br>2,7292<br>2,7452
+    <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>2,8660<br>2,7292<br>2,7452 <td>49,62 <br>98,86 <br>92,05
 </tr>
 
 <tr align='center'>
-    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2,6651 <br>3,4455 <br>2,9858
-</tr>
-
-
-
-<tr align='center'>
-    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2,7898 <br>2,7823 <br>2,7250
+    <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2,6651 <br>3,4455 <br>2,9858 <td>45,74 <br>
+107,08 <br>117,61
 </tr>
 
 <tr align='center'>
-    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2,7576 <br>3,4385 <br>3,0342
-</tr>
-
-
-
-<tr align='center'>
-    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3,0799 <br>2,7002 <br>2,7347
+    <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2,7898 <br>2,7823 <br>2,7250 <td>54,46 <br>118,95 <br>153,51
 </tr>
 
 <tr align='center'>
-    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2,8408 <br>3,4264 <br>2,9946
+    <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2,7576 <br>3,4385 <br>3,0342 <td>72,7 <br>146,38 <br>181,25
+</tr>
+
+<tr align='center'>
+    <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3,0799 <br>2,7002 <br>2,7347 <td>66,25 <br>149,87 <br>134,57
+</tr>
+
+<tr align='center'>
+    <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2,8408 <br>3,4264 <br>2,9946 <td>76,02 <br>161,52 <br>131,22
 </tr>
 </table>
-
-<!-- |          |model                      |averageDistance degC|
-|:--------:|:-------------------------:|:------------------:|
-|32        |simplernn1_32_RMSprop      |2.6451327808128315  |
-|RMSprop   |`lstm1_32_RMSprop`         |`2.634731841976658` |
-|          |gru1_32_RMSprop            |2.6331591564837304  |
-|──────────|───────────────────────────|────────────────────|
-|32        |`simplernn1_32_SGD`        |`2.618292828682733` |
-|SGD       |lstm1_32_SGD               |2.8037038837881125  |
-|          |`gru1_32_SGD`              |`2.62076415815729`  |
-|──────────|───────────────────────────|────────────────────|
-|32_32_32  |simplernn3_32_32_32_RMSprop|2.865973051694582   |
-|RMSprop   |lstm3_32_32_32_RMSprop     |2.729212822038299   |
-|          |gru3_32_32_32_RMSprop      |2.745191264720594   |
-|──────────|───────────────────────────|────────────────────|
-|32_32_32  |simplernn3_32_32_32_SGD    |2.6650527978019385  |
-|SGD       |lstm3_32_32_32_SGD         |3.445523014778766   |
-|          |gru3_32_32_32_SGD          |2.9858316431687197  |
-|──────────|───────────────────────────|────────────────────|
-|16_32_64  |simplernn3_16_32_64_RMSprop|2.7898178471202146  |
-|RMSprop   |lstm3_16_32_64_RMSprop     |2.782277435279318   |
-|          |gru3_16_32_64_RMSprop      |2.7250013006201805  |
-|──────────|───────────────────────────|────────────────────|
-|16_32_64  |simplernn3_16_32_64_SGD    |2.75758577485546    |
-|SGD       |lstm3_16_32_64_SGD         |3.4385166828121463  |
-|          |gru3_16_32_64_SGD          |3.0341526444499607  |
-|──────────|───────────────────────────|────────────────────|
-|64_32_16  |simplernn3_64_32_16_RMSprop|3.079921303027137   |
-|RMSprop   |lstm3_64_32_16_RMSprop     |2.700237106817222   |
-|          |gru3_64_32_16_RMSprop      |2.7347319761429514  |
-|──────────|───────────────────────────|────────────────────|
-|64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388   |
-|SGD       |lstm3_64_32_16_SGD         |3.4263785342488977  |
-|          |gru3_64_32_16_SGD          |2.994584340730189   | -->
 
 
 ### Train & Validation Loss (T)
@@ -283,45 +205,42 @@
 ### Average distance (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
-    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
+    <td>model <td>averageDistance [degC] <td> learning time [sec]
 </tr>
 
 <tr align="center">
-    <td> 32_RMSprop <td> simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop <td>2,8371 <br>2,9501 <br>2,8693
+    <td> simplernn1_32_RMSprop <br>lstm1_32_RMSprop <br>gru1_32_RMSprop <td>2,8371 <br>2,9501 <br>2,8693 <td>33,4 <br>48,91 <br>47,09
 </tr>
 
 <tr align="center">
-    <td>32_SGD <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD <td>3,0006 <br>3,0140 <br>2,6824
+    <td>simplernn1_32_SGD <br>lstm1_32_SGD <br>gru1_32_SGD <td>3,0006 <br>3,0140 <br>2,6824 <td>30,73 <br>47,27 <br>48,9
 </tr>
 
 <tr align="center">
-    <td>32_32_32_RMSprop <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>4,0512 <br>3,0534 <br>3,4401
+    <td>simplernn3_32_32_32_RMSprop <br>lstm3_32_32_32_RMSprop <br>gru3_32_32_32_RMSprop <td>4,0512 <br>3,0534 <br>3,4401 <td>50,52 <br>90,14 <br>92,9
 </tr>
 
 <tr align="center">
-    <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>3,3595 <br>3,8607 <br>3,1698
+    <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>3,3595 <br>3,8607 <br>3,1698 <td>47,05 <br>95,89 <br>93,53
 </tr>
 
 <tr align="center">
-    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>3,6657 <br>3,3600 <br>3,4465
+    <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>3,6657 <br>3,3600 <br>3,4465 <td>50,32 <br>121,15 <br>118,43
 </tr>
 
 <tr align="center">
-    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>3,0533 <br>4,0238 <br>3,1776
+    <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>3,0533 <br>4,0238 <br>3,1776 <td>44,01 <br>141,15 <br>133,71
 </tr>
 
 <tr align="center">
-    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>4,0028 <br>3,6192 <br>3,8740
+    <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>4,0028 <br>3,6192 <br>3,8740 <td>63,51 <br>140,39 <br>126,2
 </tr>
 
 <tr align="center">
-    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD <td>3,2403 <br>3,7618 <br>2,9983
+    <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD <td>3,2403 <br>3,7618 <br>2,9983 <td>48,68 <br>138,38 <br>131,59
 </tr>
 </table>
 
-<!-- <tr>
-    <td> <td> <br> <br> <td> <br> <br>
-</tr> -->
 
 ### Train & Validation Loss (T_p_H2OC_maxWv)
 <table align="center">
@@ -405,10 +324,10 @@
 ### Average distance (EMA_T)
 <table align="center">
 <tr align='center'>
-    <td>model</td> <td>averageDistance [degC]</td> 
+    <td>model</td> <td>averageDistance [degC] <td> learning time [sec]
 </tr>
 <tr align="center">
-    <td> EMA_lstm1_32_RMSprop <br>EMA_simplernn1_32_SGD <br>EMA_gru1_32_SGD <td>2,6568 <br>2,5941 <br>2,6319
+    <td> EMA_lstm1_32_RMSprop <br>EMA_simplernn1_32_SGD <br>EMA_gru1_32_SGD <td>2,6568 <br>2,5941 <br>2,6319 <td>53,32 <br>35,61 <br>50,0
 </tr>
 </table>
 
@@ -466,9 +385,9 @@
 ### Prediction Mistake (EMA_T)
 <table align="center">
 <tr align='center'>
-<th> simplernn1_32_SGD </th>
-<th> lstm1_32_RMSprop </th>
-<th> gru1_32_SGD </th>
+    <th> simplernn1_32_SGD </th>
+    <th> lstm1_32_RMSprop </th>
+    <th> gru1_32_SGD </th>
 </tr>
 <tr>
 <td><img src = 'results/EMA_T/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/EMA_simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
