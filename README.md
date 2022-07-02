@@ -100,7 +100,7 @@
 |          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
 |          |SimpleRNN(None,32)   |LSTM(None,32)   |GRU(None,32)   |
 |          |Dense(None,1)        |Dense(None,1)   |Dense(None,1)  |
-
+|          |─────────────────────|────────────────|───────────────|
 | RMSprop  |SimpleRNN(None,10,64)|LSTM(None,10,64)|GRU(None,10,64)|
 |          |SimpleRNN(None,10,32)|LSTM(None,10,32)|GRU(None,10,32)|
 |          |SimpleRNN(None,16)   |LSTM(None,16)   |GRU(None,16)   |
@@ -135,8 +135,8 @@
 |               |          Grouping             ||         Grouping 2         ||  Not Grouped    |
 | First Header  | Second Header | Third Header   | Forth Header | Fifth Header | Sixth Header    |
 | ------------- | :-----------: | -------------: | :----------: | :----------: | --------------- |
-| Tall Cell     |          *Long Cell*          ||         *Long Long Cell*                    |||
-| ^^            |   **Bold**    | 1. first item  | *Italic*     | 3. third item | + first point  |\
+| Tall Cell     |          *Long Cell*           |         *Long Long Cell*                      |
+| ^^            |   **Bold**    | 1. first item  | *Italic*     | 3. third item | + first point  |
 | ^^            |               | 1. second item |              | 1. forth item | + second point |
 
 | New section   |     More      |         Data   | ... - -- --- |||
