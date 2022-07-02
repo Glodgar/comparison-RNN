@@ -271,12 +271,12 @@
 ### Train & Validation Loss
 <table align="center">
 <tr align='center'>
-<th> simplernn1_32_SGD </th>
+<th> simplernn1_32_RMSprop </th>
 <th> lstm1_32_RMSprop </th>
 <th> gru1_32_SGD </th>
 </tr>
 <tr>
-<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
 
 <td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
 
@@ -288,12 +288,12 @@
 ### Predicted Data For First 75 Days
 <table align="center">
 <tr align='center'>
-<th> simplernn1_32_SGD </th>
+<th> simplernn1_32_RMSprop </th>
 <th> lstm1_32_RMSprop </th>
 <th> gru1_32_SGD </th>
 </tr>
 <tr>
-<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
 
 <td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
 
@@ -305,12 +305,12 @@
 ### Scatter Plots
 <table align="center">
 <tr align='center'>
-<th> simplernn1_32_SGD </th>
+<th> simplernn1_32_RMSprop </th>
 <th> lstm1_32_RMSprop </th>
 <th> gru1_32_SGD </th>
 </tr>
 <tr>
-<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
 
 <td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
 
@@ -322,12 +322,12 @@
 ### Prediction Mistake
 <table align="center">
 <tr align='center'>
-<th> simplernn1_32_SGD </th>
+<th> simplernn1_32_RMSprop </th>
 <th> lstm1_32_RMSprop </th>
 <th> gru1_32_SGD </th>
 </tr>
 <tr>
-<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
 
 <td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
 
