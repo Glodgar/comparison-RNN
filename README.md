@@ -87,40 +87,41 @@
 
 <!-- ├ ┬ ┼  ┤ -->
 
-## Average distance for T
-|          |model                      |averageDistance    |
-|:--------:|:-------------------------:|:-----------------:|
-|32        |simplernn1_32_RMSprop      |2.6451327808128315 |
-|RMSprop   |`lstm1_32_RMSprop`         |`2.634731841976658`|
-|          |gru1_32_RMSprop            |2.6331591564837304 |
-|──────────|───────────────────────────|───────────────────|
-|32        |`simplernn1_32_SGD`        |`2.618292828682733`|
-|SGD       |lstm1_32_SGD               |2.8037038837881125 |
-|          |`gru1_32_SGD`              |`2.62076415815729` |
-|──────────|───────────────────────────|───────────────────|
-|32_32_32  |simplernn3_32_32_32_RMSprop|2.865973051694582  |
-|RMSprop   |lstm3_32_32_32_RMSprop     |2.729212822038299  |
-|          |gru3_32_32_32_RMSprop      |2.745191264720594  |
-|──────────|───────────────────────────|───────────────────|
-|32_32_32  |simplernn3_32_32_32_SGD    |2.6650527978019385 |
-|SGD       |lstm3_32_32_32_SGD         |3.445523014778766  |
-|          |gru3_32_32_32_SGD          |2.9858316431687197 |
-|──────────|───────────────────────────|───────────────────|
-|16_32_64  |simplernn3_16_32_64_RMSprop|2.7898178471202146 |
-|RMSprop   |lstm3_16_32_64_RMSprop     |2.782277435279318  |
-|          |gru3_16_32_64_RMSprop      |2.7250013006201805 |
-|──────────|───────────────────────────|────────────────── |
-|16_32_64  |simplernn3_16_32_64_SGD    |2.75758577485546   |
-|RMSprop   |lstm3_16_32_64_SGD         |3.4385166828121463 |
-|          |gru3_16_32_64_SGD          |3.0341526444499607 |
-|──────────|───────────────────────────|───────────────────|
-|64_32_16  |simplernn3_64_32_16_RMSprop|3.079921303027137  |
-|RMSprop   |lstm3_64_32_16_RMSprop     |2.700237106817222  |
-|          |gru3_64_32_16_RMSprop      |2.7347319761429514 |
-|──────────|───────────────────────────|───────────────────|
-|64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388  |
-|SGD       |lstm3_64_32_16_SGD         |3.4263785342488977 |
-|          |gru3_64_32_16_SGD          |2.994584340730189  |
+### Results for T
+### Average distance for T
+|          |model                      |averageDistance degC|
+|:--------:|:-------------------------:|:------------------:|
+|32        |simplernn1_32_RMSprop      |2.6451327808128315  |
+|RMSprop   |`lstm1_32_RMSprop`         |`2.634731841976658` |
+|          |gru1_32_RMSprop            |2.6331591564837304  |
+|──────────|───────────────────────────|────────────────────|
+|32        |`simplernn1_32_SGD`        |`2.618292828682733` |
+|SGD       |lstm1_32_SGD               |2.8037038837881125  |
+|          |`gru1_32_SGD`              |`2.62076415815729`  |
+|──────────|───────────────────────────|────────────────────|
+|32_32_32  |simplernn3_32_32_32_RMSprop|2.865973051694582   |
+|RMSprop   |lstm3_32_32_32_RMSprop     |2.729212822038299   |
+|          |gru3_32_32_32_RMSprop      |2.745191264720594   |
+|──────────|───────────────────────────|────────────────────|
+|32_32_32  |simplernn3_32_32_32_SGD    |2.6650527978019385  |
+|SGD       |lstm3_32_32_32_SGD         |3.445523014778766   |
+|          |gru3_32_32_32_SGD          |2.9858316431687197  |
+|──────────|───────────────────────────|────────────────────|
+|16_32_64  |simplernn3_16_32_64_RMSprop|2.7898178471202146  |
+|RMSprop   |lstm3_16_32_64_RMSprop     |2.782277435279318   |
+|          |gru3_16_32_64_RMSprop      |2.7250013006201805  |
+|──────────|───────────────────────────|────────────────────|
+|16_32_64  |simplernn3_16_32_64_SGD    |2.75758577485546    |
+|SGD       |lstm3_16_32_64_SGD         |3.4385166828121463  |
+|          |gru3_16_32_64_SGD          |3.0341526444499607  |
+|──────────|───────────────────────────|────────────────────|
+|64_32_16  |simplernn3_64_32_16_RMSprop|3.079921303027137   |
+|RMSprop   |lstm3_64_32_16_RMSprop     |2.700237106817222   |
+|          |gru3_64_32_16_RMSprop      |2.7347319761429514  |
+|──────────|───────────────────────────|────────────────────|
+|64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388   |
+|SGD       |lstm3_64_32_16_SGD         |3.4263785342488977  |
+|          |gru3_64_32_16_SGD          |2.994584340730189   |
 
 
 ### Train & Validation Loss
@@ -193,10 +194,10 @@
 
 
 
-## Average distance for T
+### Average distance for T
 <table align="center">
 <tr align='center'>
-    <td>units_optimizer</td> <td>model</td> <td>averageDistance</td> 
+    <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
 </tr>
 
 <tr align='center'>
@@ -214,7 +215,22 @@
 <tr align='center'>
     <td>32_32_32_SGD <td>simplernn3_32_32_32_SGD <br>lstm3_32_32_32_SGD <br>gru3_32_32_32_SGD <td>2.6650527978019385 <br>3.445523014778766 <br>2.7250013006201805
 </tr>
-    
+
+<tr align='center'>
+    <td>16_32_64_RMSprop <td>simplernn3_16_32_64_RMSprop <br>lstm3_16_32_64_RMSprop <br>gru3_16_32_64_RMSprop <td>2.7898178471202146 <br>2.782277435279318 <br>2.7250013006201805
+</tr>
+
+<tr align='center'>
+    <td>16_32_64_SGD <td>simplernn3_16_32_64_SGD <br>lstm3_16_32_64_SGD <br>gru3_16_32_64_SGD <td>2.75758577485546 <br>3.4385166828121463 <br>3.0341526444499607
+</tr>
+
+<tr align='center'>
+    <td>64_32_16_RMSprop <td>simplernn3_64_32_16_RMSprop <br>lstm3_64_32_16_RMSprop <br>gru3_64_32_16_RMSprop <td>3.079921303027137 <br>2.700237106817222 <br>2.7347319761429514
+</tr>
+
+<tr align='center'>
+    <td>64_32_16_SGD <td>simplernn3_64_32_16_SGD <br>lstm3_64_32_16_SGD <br>gru3_64_32_16_SGD  <td>2.840829965699388 <br>3.4263785342488977 <br>2.994584340730189
+</tr>
 </table>
 <!-- 
 |          |model                      |averageDistance    |
@@ -250,3 +266,71 @@
 |64_32_16  |simplernn3_64_32_16_SGD    |2.840829965699388  |
 |SGD       |lstm3_64_32_16_SGD         |3.4263785342488977 |
 |          |gru3_64_32_16_SGD          |2.994584340730189  | -->
+
+## Results for T_p_H2OC_maxWv
+### Train & Validation Loss
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_Train&ValidationLoss.png' height = '200'>
+</tr>
+</table>
+
+
+### Predicted Data For First 75 Days
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictedDataForFirst75Days.png' height = '200'>
+</tr>
+</table>
+
+
+### Scatter Plots
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_ScatterPlot.png' height = '200'>
+</tr>
+</table>
+
+
+### Prediction Mistake
+<table align="center">
+<tr align='center'>
+<th> simplernn1_32_SGD </th>
+<th> lstm1_32_RMSprop </th>
+<th> gru1_32_SGD </th>
+</tr>
+<tr>
+<td><img src = 'results/T_p_H2OC_maxWv/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/simplernn1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100/charts/lstm1_units_32_Optimizer_RMSprop_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+
+<td><img src = 'results/T_p_H2OC_maxWv/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100/charts/gru1_units_32_Optimizer_SGD_Loss_mae_Epochs_500_BatchSize_100_PredictionMistake.png' height = '200'>
+</tr>
+</table>
