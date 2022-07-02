@@ -91,8 +91,8 @@
 <!-- ├ ┬ ┼  ┤ -->
 
 <!-- Results for t -->
-## Results for T
-### Average distance for T
+## Results (T)
+### Average distance (T)
 <table align="center">
 <tr align='center'>
     <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
@@ -238,8 +238,8 @@
 </table>
 
 <!-- Results for T_p_H2OC_maxWv -->
-## Results for T_p_H2OC_maxWv
-### Average distance for T_p_H2OC_maxWv
+## Results (T_p_H2OC_maxWv)
+### Average distance (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
     <td>units_optimizer</td> <td>model</td> <td>averageDistance [degC]</td> 
@@ -349,8 +349,8 @@
 </tr>
 </table>
 
-## Results for EMA_T
-### data for EMA_T
+## Results (EMA_T)
+### Data (EMA_T)
 <table align="center">
 <tr align='center'>
     <th> EMA temperature </th>
@@ -361,15 +361,15 @@
 </table>
 
 <!-- Results for T_p_H2OC_maxWv -->
-### Average distance for EMA_T
+### Average distance (EMA_T)
 <table align="center">
 <tr align='center'>
     <td>model</td> <td>averageDistance [degC]</td> 
 </tr>
-
 <tr align="center">
     <td> EMA_lstm1_32_RMSprop <br>EMA_simplernn1_32_SGD <br>EMA_gru1_32_SGD <td>2,6568 <br>2,5941 <br>2,6319
 </tr>
+</table>
 
 ### Train & Validation Loss (EMA_T)
 <table align="center">
