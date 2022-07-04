@@ -92,7 +92,6 @@
 
 <!-- Results for t -->
 ## Results (T)
-### Average distance (T)
 <table align="center">
 <tr align='center'>
     <td>model <td>averageDistance [degC] <td> learning time [sec]
@@ -202,7 +201,6 @@
 
 <!-- Results for T_p_H2OC_maxWv -->
 ## Results (T_p_H2OC_maxWv)
-### Average distance (T_p_H2OC_maxWv)
 <table align="center">
 <tr align='center'>
     <td>model <td>averageDistance [degC] <td> learning time [sec]
@@ -309,8 +307,7 @@
 </tr>
 </table>
 
-## Results (EMA_T)
-### Data (EMA_T)
+## Data (EMA_T)
 <table align="center">
 <tr align='center'>
     <th> EMA temperature </th>
@@ -320,8 +317,7 @@
 </tr>
 </table>
 
-<!-- Results for T_p_H2OC_maxWv -->
-### Average distance (EMA_T)
+## Results (EMA_T)
 <table align="center">
 <tr align='center'>
     <td>model</td> <td>averageDistance [degC] <td> learning time [sec]
