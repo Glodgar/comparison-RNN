@@ -10,10 +10,10 @@ The research was conducted in three ways
 
 The effectiveness of the model was evaluated by the model learning time and the average distance between the prediction and the expected value, described by the formula:
 <!-- $\aD=(sum(|X x_true - X x_pred|))/n$ -->
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+$$ x = {sum  (|a-b|)}/n $$
 
 
-Edit the **`config.py`** file to select training parameters by changing the values, commenting or uncommenting the code with true/false values
+Edit the **`config.py`** file to select training parameters by changing the values, commenting or uncommenting the code with true/false values.
 To run training and prediction run **`main.py`**:
 
 
