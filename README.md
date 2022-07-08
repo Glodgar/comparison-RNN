@@ -1,9 +1,9 @@
 # Comparison efficency of SimpleRNN, LSTM and GRU in processing of sequences
 <!-- ├ ┬ ┼  ┤ -->
 ## Introduction
-The research consisted of comparing the effectiveness of models built based on SimpleRNN, LSTM and GRU layers in sequence processing. The research included teaching and testing of the developed models. The task of the models was to predict the prevailing temperature after 24 hours based on the previous 10 days.
+The research consisted of comparing the effectiveness of models built based on SimpleRNN, LSTM and GRU layers in sequence processing. The research included teaching and testing of the developed models. The task of the models was to predict the prevailing temperature after 24 hours based on the previous 10 days. Default activation functions were applied on each layer.
 
-The research was conducted in three ways
+The research was conducted in three ways:
 * for data containing only temperature (**`T`**)
 * for data containing temperature, pressure, humidity and maximum wind speed (**`T_p_H2OC_maxWv`**)
 * for data containing temperature modified by an exponential moving average of the last two days (**`EMA_T`**)
@@ -31,6 +31,7 @@ python main.py
 * Pandas: 1.4.0
 * Matplotlib: 3.5.1
 * TensorFlow: 2.10.0
+
 
 <!-- dataset -->
 ## Dataset
