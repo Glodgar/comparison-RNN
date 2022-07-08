@@ -5,11 +5,17 @@ The research consisted of comparing the effectiveness of models built based on S
 
 The research was conducted in three ways
 * for data containing only temperature (T)
-* for data containing temperature, pressure, humidity and maximum wind speed
-* for data containing temperature modified by an exponential moving average of the last two days
+* for data containing temperature, pressure, humidity and maximum wind speed (T_p_H2OC_maxWv)
+* for data containing temperature modified by an exponential moving average of the last two days (EMA_T)
 
 The effectiveness of the model was evaluated by the model learning time and the average distance between the prediction and the expected value, described by the formula:
-$\aD=(sum(|X x_true - X x_pred|))/n$
+<!-- $\aD=(sum(|X x_true - X x_pred|))/n$ -->
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+
+
+Edit the **`config.py`** file to select training parameters by changing the values, commenting or uncommenting the code with true/false values
+To run training and prediction run **`main.py`**:
+
 
 ## Development Environment
 * CPU: Intel(R) Core(TM) i5-7600K CPU @ 380GHz 3.79 GHz
