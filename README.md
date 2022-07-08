@@ -9,13 +9,15 @@ The research was conducted in three ways
 * for data containing temperature modified by an exponential moving average of the last two days (EMA_T)
 
 The effectiveness of the model was evaluated by the model learning time and the average distance between the prediction and the expected value, described by the formula:
-<!-- $\aD=(sum(|X x_true - X x_pred|))/n$ -->
 $$ x = {Σ(|a-b|) \over n} $$
-x - average distance, a - true values, b - predicted values, n - count of values
+**`x`** - average distance, **`a`** - true values, **`b`** - predicted values, **`n`** - count of values
 
 
 Edit the **`config.py`** file to select training parameters by changing the values, commenting or uncommenting the code with true/false values.
 To run training and prediction run **`main.py`**:
+```sh
+python main.py
+```
 
 
 ## Development Environment
