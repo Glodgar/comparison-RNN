@@ -1,5 +1,16 @@
 # Comparison efficency of SimpleRNN, LSTM and GRU in processing of sequences
 <!-- ├ ┬ ┼  ┤ -->
+## Introduction
+The research consisted of comparing the effectiveness of models built based on SimpleRNN, LSTM and GRU layers in sequence processing. The research included teaching and testing of the developed models. The task of the models was to predict the prevailing temperature after 24 hours based on the previous 10 days.
+
+The research was conducted in three ways
+* for data containing only temperature (T)
+* for data containing temperature, pressure, humidity and maximum wind speed
+* for data containing temperature modified by an exponential moving average of the last two days
+
+The effectiveness of the model was evaluated by the model learning time and the average distance between the prediction and the expected value, described by the formula:
+$\aD=(sum(|X x_true - X x_pred|))/n$
+
 ## Development Environment
 * CPU: Intel(R) Core(TM) i5-7600K CPU @ 380GHz 3.79 GHz
 * Ram: 16.0 GB 
@@ -15,6 +26,9 @@
 <!-- dataset -->
 ## Dataset
 ![Ilustration of data](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/data.png)
+
+## Training and predict schema
+![Ilustration of data](https://raw.githubusercontent.com/Glodgar/comparison-RNN/master/img/prediction_schema.png)
 
 <!-- foders structure -->
 ## Folders structure
