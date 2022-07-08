@@ -10,7 +10,7 @@ The research was conducted in three ways
 
 The effectiveness of the model was evaluated by the model learning time and the average distance between the prediction and the expected value, described by the formula:
 <!-- $\aD=(sum(|X x_true - X x_pred|))/n$ -->
-$$ x = {sum  (|a-b|)}/n $$
+$$ x = (Σ(|a-b|))/n $$
 
 
 Edit the **`config.py`** file to select training parameters by changing the values, commenting or uncommenting the code with true/false values.
