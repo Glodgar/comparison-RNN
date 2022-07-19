@@ -21,7 +21,7 @@ python main.py
 
 
 ## Development Environment
-* CPU: Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz 3.79 GHz
+* CPU: Intel(R) Core(TM) i5-7600K CPU @ 3.80GHz overclock to 4.30 GHz
 * Ram: 16.0 GB 
 * Python: 3.9.10
 * Keras: 2.10.0
